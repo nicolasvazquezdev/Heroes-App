@@ -1,0 +1,47 @@
+.login-screen__container {
+    align-items: center;
+    background-color: rgb(105, 4, 4);
+    background-image: url(./thor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.login-btn {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.445);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100%;
+    margin: 0;
+}
+
+.login-btn h1 {
+    font-size: 50px;
+    color: #fafafa;
+}
+
+.login-btn__button {
+    background-color: rgba(255, 0, 0, 0.11);
+    color: #fafafa;
+    width: 40%;
+}
+
+@media (min-width: 768px) {
+    .login-screen__container {
+        background-color: rgb(83, 2, 2);
+        background-position: fixed;
+        background-size: unset;
+        flex-direction: row;
+    }
+    .login-btn__button {
+        width: 20%;
+        font-size: 20px;
+    }
+}
